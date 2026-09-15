@@ -63,4 +63,38 @@ of the TurnKey LAMP virtual machine in a private VirtualBox lab.
 
 No production systems were tested.
 
+## Adminer Enumeration
 
+Adminer was identified through the TurnKey LAMP web interface.
+
+**Application:** Adminer
+
+**Version:** 4.8.1
+
+**Interface:** Database login page
+
+The Adminer interface provides fields for:
+
+- Server
+- Username
+- Password
+
+## Security Observation
+
+Adminer is a web-based database administration interface.
+
+Because it provides database management functionality, exposing
+Adminer through the web server increases the administrative attack
+surface.
+
+The interface should be restricted to authorized administrators
+and should not be unnecessarily exposed to untrusted networks.
+
+No authentication bypass or credential attacks were performed.
+
+## Testing Environment
+
+Adminer was identified during authorized testing of the TurnKey
+LAMP virtual machine in a private VirtualBox lab.
+
+No production systems were tested.
