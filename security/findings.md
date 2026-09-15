@@ -86,3 +86,15 @@ LAMP virtual machine in a private VirtualBox lab.
 
 No credential attacks, authentication bypasses, or destructive
 exploitation were performed.
+
+
+## Finding 4 — Webmin Listening on All IPv4 Interfaces
+
+### Description
+
+The Webmin service is configured to listen on TCP port 12321.
+
+Socket inspection showed:
+
+```text
+0.0.0.0:12321
