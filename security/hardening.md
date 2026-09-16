@@ -59,3 +59,12 @@ authorized management system from accessing Webmin.
 The Webmin access restriction was successfully applied and verified
 from the Kali testing machine.
 
+## Firewall Persistence
+
+The `iptables-persistent` package was configured so that the
+Webmin firewall rules survive a system reboot.
+
+The IPv4 firewall configuration was saved in:
+
+```text
+/etc/iptables/rules.v4
